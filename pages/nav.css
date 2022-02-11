@@ -36,7 +36,7 @@
     justify-content: space-between;
     text-align: center;
 }
-
+/*i am designing the search button  to look cute $*/
 .search{
     width: 700px;
     display: flex;
@@ -48,7 +48,7 @@
     padding: 10px 20px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    border: 1px solid #41ddd0;
+    border: 1px solid black;
     text-transform: capitalize;
     background: none;
     color: wheat;

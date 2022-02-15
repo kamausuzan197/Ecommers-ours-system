@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>item 1 product description</title>
+    <link rel="stylesheet" href="./pages/description1.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+</head>
+<body>
+    <p>this is a description of my product page</p>
+    <!--haha am hating myself for this but am litary borrowing some code to try it out if it can work before i work on the main page-->
+    <div class="product-card">
+      <h1>Best Shoes</h1>
+      <p>Lorem ipsum, or lipsum as it is sometimes known</p>
+      <div class="product-pic">
+          <img src="./images/food4.jpg" width="100%" height="100%" alt="">
+      </div>
+      <div class="product-colors">
+        <span class="blue active" data-color="#7ed6df" data-pic="url(1.png)"></span>
+        <span class="green" data-color="#badc58" data-pic="url(2.png)"></span>
+        <span class="yellow" data-color="#f9ca24" data-pic="url(3.png)"></span>
+        <span class="rose" data-color="#ff7979" data-pic="url(4.png)"></span>
+      </div>
+      <div class="product-info">
+        <div class="product-price">$90</div>
+        <a href="#" class="product-button">Add to Cart</a>
+        <p>Outside of Italy, cappuccino is a coffee drink that today is typically composed of a single espresso shot and hot milk, with the surface topped with foamed milk. ... The top third of the drink consists of milk foam; this foam can be decorated with artistic drawings made with the same milk, called latte art.</p>
+      </div>
+    </div>
+ 
+    <script>
+      $(".product-colors span").click(function(){
+        $(".product-colors span").removeClass("active");
+        $(this).addClass("active");
+        $("body").css("background",$(this).attr("data-color"));
+        $(".product-price").css("color",$(this).attr("data-color"));
+        $(".product-button").css("color",$(this).attr("data-color"));
+        $(".product-pic").css("background-image",$(this).attr("data-pic"));
+      });
+    </script>
+</body>
+</html>

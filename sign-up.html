@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--this is a link to add an icone-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./pages/nav.css">
+    <link rel="stylesheet" href="./pages/nav.js">
+    <link rel="stylesheet" href="./pages/sign-up.css">
+    <title>Sign-up page.</title>
+</head>
+<body>
+    <nav class="navbar">
+        <!--creating the nav and placing a logo in it ,i had issues with the image so i placed inline styling to reduce the logo size-->
+        <div class="nav">
+            <img src="./images/smpslogo2.jpg" width="100" height="100" alt="SMPS-LOGO">
+            <div class="nav items">
+                <!--here am creating a search bar ,so as to allow anyone to search on the webpage when ever they want or what ever they want to know is exisiting in the file-->
+                <div class="search">
+                <input type="text"class="search-box"placeholder="search brand,product">
+                                                                                                                                                                <button class="search-btn">search</button>
+                </div>
+                <a href="#">
+                    <img src="./images/user102-removebg-preview.png"width="100" height ="100" alt="">
+                </a> <br> <br>
+                <a href="#">
+                    <img src="./images/cart1-removebg-preview.png" width="100" height ="100"  alt="">
+                </a>
+            </div>
+        </div>
+        <!--here i am putting in links to represent the items i am going to sell-->
+        <ul class="links-container">
+            <li class="link-item"><a href="./sign-up.html" class="link">sign-in</a></li>
+            <li class="link-item"><a href="./index.html" class="link">home</a></li>
+            <li class="link-item"><a href="./product.html" class="link">products</a></li>
+            <li class="link-item"><a href="./contact.html" class="link">contacts</a></li>
+            <li class="link-item"><a href="#" class="link">log-in</a></li>
+        </ul>
+    </nav>
+      <div>
+          <!--the section of signup form-->
+          <div>
+              <h1>SING UP</h1>
+              <h5>welcome to your favorite food spar</h5>
+              <form action="" method="">
+                  <div>
+                      <p>
+                    <lable for="userName"> user name</lable></p>
+                    <input type="text" id="username" autocomplete="off">
+                  </div>
+                  <div>
+                    <p>
+                  <lable for="emailaddress"> Email address</lable></p>
+                  <input type="text" id="emailaddress" autocomplete="off">
+                </div>
+                <div>
+                    <p>
+                  <lable for="password"> password</lable></p>
+                  <input type="text" id="password" autocomplete="off">
+                </div>
+                <div>
+                    <p>
+                  <lable for="confirmpassword"> confirm-password</lable></p>
+                  <input type="text" id="confirmpassword" autocomplete="off">
+                </div>
+                <button type="button" id="btn">Sign Up Now</button>
+             <p>Already a member? <a href="./log-in.html">Log in</a></p>
+              </form>
+          </div>
+          <!--inputiing icones-->
+          <div>
+              <h6>or connect with</h6>
+              <div><i></i></div>
+              <div><i></i></div>
+              <div><i></i></i></div>
+          </div>
+
+      </div>
+    
+</body>
+</html>
